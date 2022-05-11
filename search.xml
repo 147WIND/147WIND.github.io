@@ -1,33 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>欢迎来到我的个人博客</title>
-      <link href="/2022/05/05/hello/"/>
-      <url>/2022/05/05/hello/</url>
-      
-        <content type="html"><![CDATA[<p>这是我的第二个个人博客，第一个博客暂停使用</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>欢迎来到147的博客</title>
-      <link href="/2022/05/04/hello-world/"/>
-      <url>/2022/05/04/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-  
-  
+<search>
+  <entry>
+    <title>欢迎来到147的博客</title>
+    <url>/2022/05/04/hello-world/</url>
+    <content><![CDATA[<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>python笔记1-字符串</title>
+    <url>/2021/01/29/python%E7%AC%94%E8%AE%B01-%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
+    <content><![CDATA[<p>在Python中，存在三种内置的序列类型：<br>字符串、列表和元组</p>
+<p>序列的优点：可以支持<strong>索引和切片</strong>操作</p>
+<p>特征：第一个正索引为0，指向的是左端【—-》】，第一个正索引为负数时，指向的是右端【《—-】</p>
+<h4 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h4><p>1.可通过字符串+[索引]来获取字符串中的字符，例：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">test=&#x27;python&#x27; #类型为字符串</span><br><span class="line">print(&quot;获取第一个字符%s&quot;%test[0]) #0是字符串中的第一个字符</span><br></pre></td></tr></table></figure>
+<p>运行结果为打印出一个“p”</p>
+<p><em>补充：print中添加end’+空格’的作用是取消换行操作<br>之添加’+空格’的作用是换行</em></p>
+<p>除此之外,[]还可以获取范围内的字符，例：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">srtMsg=&quot;hello world&quot;</span><br><span class="line">print(strMsg[2:5])</span><br></pre></td></tr></table></figure><br>运行结果是打印出llo<br>如果是[2:]则是打印出第三个后面的字符，即llo world<br>如果想要倒序则改成[::-1]，即打印出dlrow olleh</p>
+<p>2.可以通过capitalize()将字符串首字母转换为大写，例：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">name=&#x27;peter&#x27;</span><br><span class="line">print(&#x27;首字母转换大写%s&#x27;%name.capitalize())</span><br></pre></td></tr></table></figure><br>运行结果为打印出“首字母转换大写Peter”</p>
+<p>lower()可以用来将字符串中的所有内容都转换成小写<br>upper()则相反</p>
+<p>3.可通过strip()来去除字符串中的空格，例：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a=&quot;   hello   &quot;</span><br><span class="line">b=a.strip()</span><br><span class="line">print(b)</span><br></pre></td></tr></table></figure><br>运行结果为打印出hello而没有空格<br>此为，lstrip()和rstrip()分别可以去除左边和右边的空格</p>
+<p>4.可以用id()来查询变量的内存地址，例：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a=1</span><br><span class="line">print(&#x27;a的内存地址为%d&#x27;%id(a))</span><br></pre></td></tr></table></figure></p>
+<p>5.可以用find()来查找目标在序列中的位置，例：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">datasrt=&#x27;i love python&#x27;</span><br><span class="line">print(datasrt.find(&#x27;p&#x27;))</span><br></pre></td></tr></table></figure><br>运行结果为打印出7<br>如果find()没有找到对象，则会返回-1</p>
+<p>index()可以查找字符串中的子字符串，如果没有找到则会报错而不会返回值</p>
+<p>6.startswith()和endswith()分别用来判断是否以什么值为开始或以什么值为结束，返回的是True或False</p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>欢迎来到我的个人博客</title>
+    <url>/2022/05/05/hello/</url>
+    <content><![CDATA[<p>这是我的第二个个人博客，第一个博客暂停使用</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>python笔记2-元组</title>
+    <url>/2021/01/31/python%E7%AC%94%E8%AE%B02-%E5%85%83%E7%BB%84/</url>
+    <content><![CDATA[<p><strong>元组</strong>（tuple）和列表很像，不同之处在于元组的数据项<strong>无法修改</strong>。元组使用<strong>小括号</strong>，元组也是通过下标进行访问</p>
+<p>特点：</p>
+<p>1.不可变</p>
+<p>2.用（）创建元组类型，数据项用逗号隔开</p>
+<p>3.数据项可以是<strong>任何类型</strong></p>
+<p>4.当元组中只有一个元素时，要加上逗号，不然后解释器会当做整型（int）来处理</p>
+<p>5.支持切片操作</p>
+<h3 id="1-count"><a href="#1-count" class="headerlink" title="1.count()"></a>1.count()</h3><p>用来计算元组中某一数据项出现出次数，例：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">tuple=(1,2,3,4,5,5,6,6,6)</span><br><span class="line">print(tuple.count(6))</span><br></pre></td></tr></table></figure><br>运行结果为打印出3</p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python笔记3-字典</title>
+    <url>/2021/02/01/python%E7%AC%94%E8%AE%B03-%E5%AD%97%E5%85%B8/</url>
+    <content><![CDATA[<p><strong>字典</strong>可以存储任意对象。字典是以<strong>键值对</strong>的形式创建的<u>{‘key’:’value’}</u>利用<strong>大括号</strong>包裹，和list一样，支持对数据的添加、修改、删除</p>
+<h3 id="访问值的安全方式：get方法"><a href="#访问值的安全方式：get方法" class="headerlink" title="访问值的安全方式：get方法"></a>访问值的安全方式：get方法</h3><p>在不确定字典是否存在某一个值而又想获取其值时，可以使用get方法，还可以设置默认值</p>
+<p><em>注意：1.字典的键（key）不能重复，值（value）可以重复<br>        2.字典的键（key）只能是不可变类型，如数字、字符串、元组</em></p>
+<p> 特点：1.不是序列类型，没有下标的概念，是一个无序的键值集合，是内置的高级数据类型<br>         2.用{}来表示字典对象，每个键值对用逗号分隔<br>         3.键必须是不可变的类型【元组、字符串】,值<br>         可以是任意类型<br>         4.每个键必定是唯一的，如果存在重复的键，后者会覆盖前者</p>
+<h3 id="1-添加、修改键值对"><a href="#1-添加、修改键值对" class="headerlink" title="1.[]添加、修改键值对"></a>1.[]添加、修改键值对</h3><p>例：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">dict=&#123;&#125; #空字典</span><br><span class="line">dict[&#x27;name&#x27;]=&#x27;147&#x27;</span><br><span class="line">print(dict)</span><br></pre></td></tr></table></figure><br>运行结果为打印出{‘name’:’147’}</p>
+<h3 id="2-len"><a href="#2-len" class="headerlink" title="2.len()"></a>2.len()</h3><p>用来计算字典中一共有几个键值对，用法与列表中的相同</p>
+<h3 id="3-如何通过键获取对应的值"><a href="#3-如何通过键获取对应的值" class="headerlink" title="3.如何通过键获取对应的值"></a>3.如何通过键获取对应的值</h3><p>例：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">dict=&#123;&#x27;name&#x27;:&#x27;147&#x27;&#125;</span><br><span class="line">print(dict[&#x27;name&#x27;])</span><br></pre></td></tr></table></figure><br>运行结果为打印出147</p>
+<h3 id="4-keys（）"><a href="#4-keys（）" class="headerlink" title="4.keys（）"></a>4.keys（）</h3><p>获取所有的键，例：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">dict=&#123;&#x27;name&#x27;:&#x27;147&#x27;,&#x27;age&#x27;:7&#125;</span><br><span class="line">print(dict.keys())</span><br></pre></td></tr></table></figure><br>运行结果为打印出dict.keys([‘name’,’age’])</p>
+<h3 id="5-values"><a href="#5-values" class="headerlink" title="5.values()"></a>5.values()</h3><p>获取所有的值，使用方法与keys（）相同</p>
+<h3 id="6-items"><a href="#6-items" class="headerlink" title="6.items()"></a>6.items()</h3><p>获取所有的键和值（以列表形式），使用方法与keys（）相同</p>
+<h3 id="7-updat（）"><a href="#7-updat（）" class="headerlink" title="7.updat（）"></a>7.updat（）</h3><p>添加或更新键值对，使用方法：字典名.updat({‘height’:’180’})</p>
+<h3 id="8-del"><a href="#8-del" class="headerlink" title="8.del"></a>8.del</h3><p>删除字典中的键值对，使用方法：<br>del 字典名[‘键’]</p>
+<h3 id="9-pop（）"><a href="#9-pop（）" class="headerlink" title="9.pop（）"></a>9.pop（）</h3><p>取出某一键值对，取出的键值对可另外使用</p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python笔记5-函数返回值</title>
+    <url>/2021/02/03/python%E7%AC%94%E8%AE%B05-%E5%87%BD%E6%95%B0%E8%BF%94%E5%9B%9E%E5%80%BC/</url>
+    <content><![CDATA[<p>函数执行完后会返回一个对象，如果在函数的内部有return 就可以返回实际的值，否则返回none<br>可以返回任意类型，返回值类型应该取决于return后面的类型<br>在一个函数体内可出现多个return值，但肯定只能返回一个return值<br>如果在一个函数体内执行了return，意味着函数就退出了，return后面的代码语句将不会执行，例：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def sum(a,b):</span><br><span class="line">    sum=a+b</span><br><span class="line">    return sum #将计算的结果返回</span><br><span class="line">    pass</span><br><span class="line">print（sum(1,2)）</span><br></pre></td></tr></table></figure><br>运行结果为打印出3</p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python笔记4-函数</title>
+    <url>/2021/02/02/python%E7%AC%94%E8%AE%B04-%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<p>在编写程序的过程中，有某一功能的代码块出现多次，为了提高编写的效率以及代码的重复使用，所以把具有独立功能的代码块组织为一个小模块，这就是函数</p>
+<h3 id="1-创建（定义）一个函数"><a href="#1-创建（定义）一个函数" class="headerlink" title="1.创建（定义）一个函数"></a>1.创建（定义）一个函数</h3><p>方法:<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def 函数名():</span><br><span class="line">    代码块</span><br><span class="line">    pass</span><br></pre></td></tr></table></figure><br>例：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def inf():</span><br><span class="line">    print(&#x27;147&#x27;)</span><br><span class="line">    pass</span><br><span class="line">inf()</span><br></pre></td></tr></table></figure><br>运行结果为打印出147</p>
+<h3 id="2-函数的参数"><a href="#2-函数的参数" class="headerlink" title="2.函数的参数"></a>2.函数的参数</h3><p>参数:其实就是函数为了实现某项特定的功能，进而为了得到实现功能所需要的数据，得到外部数据<br>例：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def sum(a,b)  #形式参数：只是意义上的一种参数，在定义的时候是不占内存地址的</span><br><span class="line">    sum=a+b</span><br><span class="line">    print(sum)</span><br><span class="line">    pass</span><br><span class="line">sum(20,15)  #实际参数：是实际占用内存地址的</span><br></pre></td></tr></table></figure><br>运行结果为打印出35</p>
+<p>还可以为函数添加<strong>默认参数</strong>，例：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def sum(a=20,b=30) #默认参数，在调用函数时若不输入参数则会使用默认参数</span><br><span class="line">    print(&#x27;默认参数相加为%d&#x27;%(a+b))</span><br><span class="line">sum()</span><br><span class="line">sum(10)</span><br></pre></td></tr></table></figure><br>运行结果为打印出默认参数相加为50和默认参数相加为40</p>
+<h3 id="3-可变参数"><a href="#3-可变参数" class="headerlink" title="3.可变参数"></a>3.可变参数</h3><p>当<strong>参数个数不确定</strong>时使用args，例：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def sum(*args):</span><br><span class="line">    for i in args:</span><br><span class="line">        result+=i</span><br><span class="line">    print(&#x27;result=%d&#x27;%(result))</span><br><span class="line">sum(1,2,3)</span><br></pre></td></tr></table></figure><br>运行结果为打印出“resul=6”</p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python笔记7-类与对象</title>
+    <url>/2021/03/15/python%E7%AC%94%E8%AE%B07-%E7%B1%BB%E4%B8%8E%E5%AF%B9%E8%B1%A1/</url>
+    <content><![CDATA[<p>类是对象的抽象化，而对象是类的一个实例</p>
+<p>对象是实实在在的一个东西，是类的实例化，具象化</p>
+<p>定义类的方法：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">class 类名：</span><br><span class="line">    属性1   #类属性</span><br><span class="line">    属性2</span><br><span class="line">    属性3</span><br><span class="line">    </span><br><span class="line">    。。。</span><br><span class="line">    </span><br><span class="line">    def 方法名（self）：  #实例方法</span><br><span class="line">        函数              #实例属性</span><br><span class="line">        pass</span><br></pre></td></tr></table></figure><br>实例方法：在类的内部，使用def关键字来定义。第一个参数默认是self【名字表示可以是其他的名字，但是这个位置必须被占用】<br>实例方法是归于类的实例所有</p>
+<p>属性：在类的内部定义的变量【类属性】<br>定义在<strong>类里面，方法外面</strong>的属性称之为<u>类属性</u>，定义在<strong>方法内部</strong>的属性称之为<u>实例属性</u></p>
+<p>创建对象的方法：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">对象名=类名()</span><br></pre></td></tr></table></figure><br>对象使用方法的方法：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">对象名.方法名（）</span><br></pre></td></tr></table></figure></p>
+<h3 id="init方法"><a href="#init方法" class="headerlink" title="init方法"></a><strong>init</strong>方法</h3><p>该方法在类实例化时会自动调用，例：<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">people</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        self.name = <span class="number">147</span></span><br><span class="line">        self.age = <span class="number">18</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">speak</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;%s 说: 我 %d 岁。&quot;</span> %(self.name,self.age))</span><br><span class="line">p = people()</span><br><span class="line">p.speak()</span><br><span class="line"></span><br></pre></td></tr></table></figure><br>运行结果为打印出”147说：我18岁“</p>
+<h3 id="new方法"><a href="#new方法" class="headerlink" title="new方法"></a><strong>new</strong>方法</h3><p>创建并返回一个实例对象，调用一次就会得到一个对象</p>
+<p>是类的实例化方法，且必须要返回该实例，否则对象创建不成功，至少有一个参数是cls代表要实例化的类，此参数在实例化时由Python解释器自动提供，new方法执行要早于init，暂时认为是用来代替第一种创建对象方法（对象名=类）</p>
+<p>使用方法：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">__</span> new __ （cls.*args, **kwargs）:</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">object</span>.__ new __(cls)</span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python笔记6-列表</title>
+    <url>/2021/02/09/python%E7%AC%94%E8%AE%B06-%E5%88%97%E8%A1%A8/</url>
+    <content><![CDATA[<p><strong>list</strong>（列表）是一种有序的集合，可以<strong>随时添加和删除</strong>其中的元素</p>
+<p>特点：1.支持<strong>增删改查</strong><br>        2.列表中的数据可改变【数据项可以变化，但内存地址不会改变】<br>        3.用<strong>中括号</strong>[]来表示列表类型，数据项之间用逗号来分割，<em>注意：数据项可以是任何类型的数据</em><br>        4.支持<strong>索引和切片</strong>来进行操作</p>
+<p>列表可以进行乘法运算，例：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">list[1,2,3]</span><br><span class="line">print(list*2)</span><br></pre></td></tr></table></figure>
+<p>运行结果为[1,2,3,1,2,3]<br>注释：字符串中的[索引]也适用于列表，例：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">list=[1,2,3]</span><br><span class="line">print(list[0])</span><br></pre></td></tr></table></figure><br>运行结果为打印出1</p>
+<h3 id="1-len"><a href="#1-len" class="headerlink" title="1.len()"></a>1.len()</h3><p>用来检测列表的长度，例:<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">li=[1,2,3]</span><br><span class="line">print(len(li))</span><br></pre></td></tr></table></figure><br>运行结果为打印出3</p>
+<h3 id="2-append"><a href="#2-append" class="headerlink" title="2.append()"></a>2.append()</h3><p>为列表后面增加新的数据项<br>使用方法：列表名.append(新增数据项)<br><em>注释：使用append一次只能增加一个数据项，增加的数据项可以是任何类型(列表、字符串等等)</em></p>
+<h3 id="3-insert"><a href="#3-insert" class="headerlink" title="3.insert()"></a>3.insert()</h3><p>在列表中的指定位置插入数据项<br>用法：列表名.insert(指定位置(0~n),要插入的数据项)</p>
+<h3 id="4-extend"><a href="#4-extend" class="headerlink" title="4.extend()"></a>4.extend()</h3><p>作用与append()类似，但可以批量添加</p>
+<h3 id="5-通过-索引-修改列表内容"><a href="#5-通过-索引-修改列表内容" class="headerlink" title="5.通过[索引]修改列表内容"></a>5.通过[索引]修改列表内容</h3><p>例:<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">list=[1,2,3]</span><br><span class="line">list[0]=4</span><br><span class="line">print(list)</span><br></pre></td></tr></table></figure><br>运行结果为打印出列表[4,1,2,3]</p>
+<h3 id="6-del"><a href="#6-del" class="headerlink" title="6.del"></a>6.del</h3><p>用来<strong>永久删除</strong>列表中的元素，也可以删除指定的变量，例：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">list=[1,2,3]</span><br><span class="line">del list[0]</span><br><span class="line">print(list)</span><br></pre></td></tr></table></figure><br>运行结果为打印出列表[2,3]<br>也可用来<strong>批量永久删除</strong>，例：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">list=[1,2,3]</span><br><span class="line">del list[0:2]</span><br><span class="line">print(list)</span><br></pre></td></tr></table></figure><br>运行结果为打印出[3]</p>
+<h3 id="7-remove"><a href="#7-remove" class="headerlink" title="7.remove()"></a>7.remove()</h3><p>可移除指定的数据项，例：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">list=[1,2,3]</span><br><span class="line">list.remove(2)</span><br><span class="line">print(list)</span><br></pre></td></tr></table></figure><br>运行结果为打印出列表[1,3]</p>
+<h3 id="8-pop"><a href="#8-pop" class="headerlink" title="8.pop()"></a>8.pop()</h3><p>指定<strong>取出</strong>列表中的某一项，而不是删除（不想删除该元素时可使用），如果留空则默认取出最后一个数据项，取出的数据可以用在其他地方，用法于remove相同</p>
+<h3 id="9-index"><a href="#9-index" class="headerlink" title="9.index()"></a>9.index()</h3><p>用来获取指定数据项的索引号<br>用法为：列表名.index(数据项，开始的索引号(默认为0)，获取范围)<br>例:<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">list=[1,2,3]</span><br><span class="line">print(list.index(1))</span><br></pre></td></tr></table></figure><br>运行结果为打印出0</p>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>remove是根据<strong>元素</strong>来删除的<br>del是根据<strong>索引</strong>来删除的<br>del可以删除指定范围内的数据项<br>del还可以删除整个列表（以及对象）<br>pop会弹出列表中的元素，弹出的元素可使用在其他地方</p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
 </search>
